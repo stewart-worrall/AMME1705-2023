@@ -30,7 +30,7 @@ void loop() {
   float timeInSeconds = (float)micros() / (float)1e6;
 
   // output a comma separated string (CSV) to the serial port
-  Serial.print(timeInSeconds);
+  Serial.print(timeInSeconds,4);
   Serial.print(",");
   Serial.println(measurementValueFloat, 4);
 }
